@@ -79,7 +79,8 @@ $config['anti_spam_timer'] =  "20";
 |
 */
 $config['sk_keys'] =  array('sk_live_69GKI0saLB8uIEnxzv8VTvRX');
-<?php
+
+
 $webhookUrl = "https://tudominio.com/main.php"; // Cambia esto a tu URL de webhook
 $webhookUrl .= "?token=" . $botToken; // Agrega el token del bot como parámetro
 
