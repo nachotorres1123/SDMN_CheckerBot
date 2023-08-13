@@ -79,4 +79,18 @@ $config['anti_spam_timer'] =  "20";
 |
 */
 $config['sk_keys'] =  array('sk_live_69GKI0saLB8uIEnxzv8VTvRX');
+<?php
+$webhookUrl = "https://tudominio.com/main.php"; // Cambia esto a tu URL de webhook
+$webhookUrl .= "?token=" . $botToken; // Agrega el token del bot como parámetro
+
+$apiUrl = "https://api.telegram.org/bot" . $botToken . "/setWebhook?url=" . $webhookUrl;
+
+$response = file_get_contents($apiUrl);
+
+if ($response === false) {
+    echo "Error al configurar el webhook";
+} else {
+    echo "Webhook configurado correctamente";
+}
+
 ?>
